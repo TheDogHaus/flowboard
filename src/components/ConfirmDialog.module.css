@@ -1,0 +1,6 @@
+.message {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  letter-spacing: var(--tracking-sm);
+  overflow-wrap: anywhere;
+}

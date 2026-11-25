@@ -1,0 +1,42 @@
+.control {
+  width: 100%;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-family: inherit;
+  color: var(--color-text);
+}
+
+.control::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Filled lavender focus state from the design */
+.control:focus {
+  outline: none;
+  background: var(--color-input-focus);
+  border-color: transparent;
+}
+
+.input {
+  height: 46px;
+  font-size: var(--text-md);
+  letter-spacing: var(--tracking-md);
+}
+
+.textarea {
+  min-height: 80px;
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+  font-size: var(--text-md);
+  line-height: var(--leading-md);
+  letter-spacing: var(--tracking-md);
+  resize: vertical;
+}
+
+.compact {
+  height: var(--control-height-sm);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-sm);
+}

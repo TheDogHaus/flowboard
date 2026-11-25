@@ -1,0 +1,89 @@
+/* Design tokens derived from the FlowBoard Figma file. Every component style reads from here. */
+:root {
+  /* Font */
+  --font-sans: 'Inter Variable', Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Colour: brand */
+  --color-primary: #0369a1;
+  --color-primary-hover: color-mix(in srgb, var(--color-primary) 85%, black);
+  --color-action: #8a38f5;
+  --color-action-hover: color-mix(in srgb, var(--color-action) 85%, black);
+  --color-avatar: #6366f1;
+
+  /* Colour: neutrals */
+  --color-text: #0a0a0a;
+  --color-text-muted: #717182;
+  --color-text-on-primary: #fff;
+  --color-bg: #f9fafb;
+  --color-surface: #fff;
+  --color-column: #f3f4f6;
+  --color-border: rgb(0 0 0 / 10%);
+  --color-overlay: rgb(0 0 0 / 50%);
+  --color-input-focus: #e0e7ff;
+
+  /* Colour: feedback */
+  --color-danger: #d4183d;
+  --color-danger-hover: color-mix(in srgb, var(--color-danger) 85%, black);
+  --color-danger-bg: #fde4e1;
+  --color-success: #067647;
+  --color-success-bg: #d3f8df;
+
+  /* Colour: priority */
+  --color-priority-high-bg: #fde4e1;
+  --color-priority-high-fg: #b42318;
+  --color-priority-medium-bg: #fef0c7;
+  --color-priority-medium-fg: #93370d;
+  --color-priority-low-bg: #d3f8df;
+  --color-priority-low-fg: #067647;
+
+  /* Type scale: size / line-height / letter-spacing */
+  --text-xs: 12px;
+  --leading-xs: 16px;
+  --text-sm: 14px;
+  --leading-sm: 20px;
+  --tracking-sm: -0.1504px;
+  --text-md: 16px;
+  --leading-md: 24px;
+  --tracking-md: -0.3125px;
+  --text-lg: 18px;
+  --leading-lg: 28px;
+  --tracking-lg: -0.4395px;
+  --text-xl: 24px;
+  --leading-xl: 32px;
+  --tracking-xl: 0.0703px;
+  --tracking-label: 0.3px;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 16px;
+  --radius-pill: 9999px;
+
+  /* Shadow */
+  --shadow-toggle: 0 1px 1.5px rgb(0 0 0 / 10%), 0 1px 1px rgb(0 0 0 / 10%);
+  --shadow-modal: 0 20px 12.5px rgb(0 0 0 / 10%), 0 8px 5px rgb(0 0 0 / 10%);
+  --shadow-panel: 0 10px 7.5px rgb(0 0 0 / 10%), 0 4px 3px rgb(0 0 0 / 10%);
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 6%);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Sizes */
+  --control-height: 44px;
+  --control-height-sm: 40px;
+  --navbar-height: 65px;
+  --subnav-height: 69px;
+  --content-max-width: 1280px;
+  --modal-width-sm: 448px;
+  --modal-width-md: 512px;
+}

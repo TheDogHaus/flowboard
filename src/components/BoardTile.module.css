@@ -1,0 +1,31 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-height: 105px;
+  padding: 25px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  transition: box-shadow 0.12s;
+}
+
+.tile:hover {
+  box-shadow: var(--shadow-toggle);
+}
+
+.name {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-lg);
+  letter-spacing: var(--tracking-lg);
+  overflow-wrap: anywhere;
+}
+
+.date {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-sm);
+  letter-spacing: var(--tracking-sm);
+  color: var(--color-text-muted);
+}

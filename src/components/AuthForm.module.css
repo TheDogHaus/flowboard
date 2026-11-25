@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  letter-spacing: var(--tracking-sm);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.back {
+  align-self: center;
+}
+
+.error,
+.notice {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.error {
+  color: var(--color-danger);
+}
+
+.notice {
+  color: var(--color-success);
+}

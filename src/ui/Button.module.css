@@ -1,0 +1,99 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: var(--control-height);
+  padding: 0 var(--space-4);
+  border: 0;
+  border-radius: var(--radius-md);
+  font-size: var(--text-md);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-md);
+  letter-spacing: var(--tracking-md);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.12s;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.full {
+  width: 100%;
+}
+
+.primary {
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+.primary:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.action {
+  background: var(--color-action);
+  color: var(--color-text-on-primary);
+}
+.action:hover:not(:disabled) {
+  background: var(--color-action-hover);
+}
+
+.danger {
+  background: var(--color-danger);
+  color: var(--color-text-on-primary);
+}
+.danger:hover:not(:disabled) {
+  background: var(--color-danger-hover);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--color-text);
+}
+.ghost:hover:not(:disabled) {
+  background: var(--color-column);
+}
+
+/* Compact text-only buttons (Add card, Delete card) */
+.subtle,
+.dangerText {
+  height: auto;
+  padding: 0;
+  border-radius: var(--radius-sm);
+  background: none;
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  letter-spacing: var(--tracking-sm);
+}
+.subtle {
+  justify-content: flex-start;
+  color: var(--color-text-muted);
+}
+.subtle:hover:not(:disabled) {
+  color: var(--color-text);
+}
+.dangerText {
+  color: var(--color-danger);
+}
+.dangerText:hover:not(:disabled) {
+  color: var(--color-danger-hover);
+}
+
+.iconButton {
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+.iconButton:hover {
+  background: var(--color-column);
+}

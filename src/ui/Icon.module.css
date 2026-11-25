@@ -1,0 +1,26 @@
+.img {
+  display: block;
+  flex-shrink: 0;
+}
+
+.close {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  overflow: clip;
+}
+
+.stroke {
+  position: absolute;
+  inset: 25%;
+}
+
+.stroke img {
+  position: absolute;
+  inset: -8.33%;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: none;
+}
